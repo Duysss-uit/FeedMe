@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FeedMe | Nuôi tôi một bữa</title>
+    <meta
+      name="description"
+      content="FeedMe là trang web cá nhân để kêu gọi cộng đồng ủng hộ bạn bằng cách quét mã QR chuyển khoản."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">FeedMe</p>
+          <h1>Nuôi tôi một bữa, tôi sẽ nhớ bạn cả tuần.</h1>
+          <p class="lead">
+            Nếu bạn thấy tôi dễ thương, hữu ích, hoặc đơn giản là muốn tiếp năng
+            lượng cho tôi tiếp tục tồn tại, hãy donate qua mã QR bên cạnh.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#donate">Quét mã để ủng hộ</a>
+            <button class="ghost-btn" id="copy-account" type="button">
+              Sao chép số tài khoản
+            </button>
+          </div>
+          <ul class="support-points">
+            <li>10k cho một ly cà phê tỉnh táo</li>
+            <li>30k cho một bữa ăn tử tế</li>
+            <li>50k+ để tôi cảm thấy được yêu thương</li>
+          </ul>
+        </div>
+
+        <aside class="donation-card" id="donate">
+          <div class="card-top">
+            <span class="live-dot"></span>
+            <p>Đang nhận yêu thương</p>
+          </div>
+
+          <img
+            class="qr-image"
+            src="assets/qr-placeholder.jpg"
+            alt="Mã QR chuyển khoản"
+          />
+
+          <div class="bank-details">
+            <div>
+              <span class="label">Ngân hàng</span>
+              <strong>MB Bank</strong>
+            </div>
+            <div>
+              <span class="label">Chủ tài khoản</span>
+              <strong>NGUYEN VAN A</strong>
+            </div>
+            <div>
+              <span class="label">Số tài khoản</span>
+              <strong id="account-number">0123456789</strong>
+            </div>
+            <div>
+              <span class="label">Nội dung</span>
+              <strong>FeedMe ung ho</strong>
+            </div>
+          </div>
+
+          <p class="hint">
+            Trang hiện đang dùng ảnh <code>assets/qr-placeholder.jpg</code>.
+            Bạn có thể thay file này bất cứ lúc nào mà không cần sửa giao diện.
+          </p>
+        </aside>
+      </section>
+
+      <section class="story">
+        <div class="story-header">
+          <p class="eyebrow">Vì sao có FeedMe?</p>
+          <h2>Một góc internet nhỏ để bạn ủng hộ tôi nhanh gọn.</h2>
+        </div>
+        <div class="story-grid">
+          <article>
+            <h3>Ủng hộ trực tiếp</h3>
+            <p>
+              Không vòng vo. Không biểu mẫu dài dòng. Chỉ cần quét mã QR và gửi
+              một khoản bạn thấy hợp lý.
+            </p>
+          </article>
+          <article>
+            <h3>Minh bạch</h3>
+            <p>
+              Toàn bộ thông tin chuyển khoản hiển thị ngay trên trang để người
+              ủng hộ thao tác trong vài giây.
+            </p>
+          </article>
+          <article>
+            <h3>Dễ cá nhân hóa</h3>
+            <p>
+              Bạn có thể đổi câu chữ, màu sắc, tên ngân hàng, số tài khoản và QR
+              theo nhu cầu chỉ bằng vài dòng.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
